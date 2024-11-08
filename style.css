@@ -1,0 +1,22 @@
+/* variables */
+:root {
+  --font-selection: "Libre Baskerville",serif;
+  --light-brown: #D3A585;
+  --brown: #913D03;
+  --dark-brown: #512500;
+  --light-green: #87AF17;
+  --dark-green: #22680B;
+  --white: #F9F9EA;
+}
+html {
+    font-family: var(--font-selection);
+    scroll-behavior: smooth
+}
+
+h1 {
+  color: var(dark-brown);
+}
+
+h1 {
+  color: var(dark-brown);
+}
