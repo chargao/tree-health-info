@@ -15,17 +15,23 @@ html {
 
 body {
   color: var(--dark-brown);
+  background-color: var(--white);
   grid-template-columns: 1fr min(45rem,90%) 1fr;
   display: grid;
   margin: 0;
 }
 
-body>* {
-    grid-column: 2;
+body > * {
+  grid-column: 2;
 }
 
-body>main {
-  grid-column: 1/-1;
+body > header {
+  padding: 0 0.5rem 2rem 0.5rem;
+  grid-column: 1 / -1;
+}
+
+body > main {
+  padding-top: 1.5rem;
 }
 
 h1 {
@@ -34,4 +40,32 @@ h1 {
 
 h2 {
   color: var(--brown);
+}
+
+body > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  background-color: var(--dark-brown);
+  color: var(--white);
+  font-size: 0.9rem;
+}
+
+
+header > nav a,
+header > nav a:visited {
+  margin: 0 0.5rem 1rem 0.5rem;
+  color: var(--dark-brown);
+  /* display: inline-block; */
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+  float: right;
+}
+
+header > nav a:hover,
+header > nav a.current,
+header > nav a[aria-current="page"],
+header > nav a[aria-current="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  cursor: pointer;
 }
