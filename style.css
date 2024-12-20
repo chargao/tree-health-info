@@ -17,9 +17,10 @@ html {
 body {
   color: var(--dark-brown);
   background-color: var(--white);
-  grid-template-columns: 1fr min(35rem, 45%) min(35rem, 45%) 1fr;
+  grid-template-columns: 1fr min(35rem, 45%) min(35rem, 45%) 1fr; /* 4 columns*/
   display: grid;
   margin: 0;
+  height: 100%;
 }
 
 body>* {
@@ -49,7 +50,7 @@ h2 {
 }
 
 body>footer {
-  margin-top: 4rem;
+  margin: 4rem 0rem 0rem;
   padding: 5rem 8rem 5rem 8rem;
   background-color: var(--dark-brown);
   color: var(--white);
